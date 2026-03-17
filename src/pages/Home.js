@@ -13,7 +13,7 @@ function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-const twoCupon=Coupon.slice(0,2)
+  const twoCupon = Coupon.slice(0, 2)
   return (
     <div className="bg-gray-50">
       <div className="min-h-screen">
@@ -33,12 +33,12 @@ const twoCupon=Coupon.slice(0,2)
                       </h3>
                     </div>
                     <div className="overflow-hidden">
-                     {twoCupon.map((item ,index)=>(
-                       <LatestDiscountCouponCode key={index}
-                       
-                       data={item}
-                     />
-                     ))}
+                      {twoCupon.map((item, index) => (
+                        <LatestDiscountCouponCode key={index}
+
+                          data={item}
+                        />
+                      ))}
                     </div>
                   </div>
                 </div>
